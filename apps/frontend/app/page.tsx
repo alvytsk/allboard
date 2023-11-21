@@ -1,4 +1,5 @@
-import CanvasBoard from '../components/CanvasBoard/CanvasBoard';
+import { CanvasBoard } from '../components/CanvasBoard';
+import { CanvasToolbar } from '../components/CanvasToolbar';
 import styles from './page.module.scss';
 
 export default async function Index() {
@@ -8,8 +9,9 @@ export default async function Index() {
    * Note: The corresponding styles are in the ./index.scss file.
    */
   return (
-    <div>
+    <>
+      <CanvasToolbar />
       <CanvasBoard />
-    </div>
+    </>
   );
 }
