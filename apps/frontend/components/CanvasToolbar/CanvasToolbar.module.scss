@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(0, -50%);
+  border-radius: 7px;
+  background-color: #4c4c4c; // Set the background color for the columns
+  padding: 6px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  gap: 6px;
+}
+
+.tool {
+  width: 60px;
+  height: 60px;
+  color: #fff; // Set the text color for the buttons
+  background-color: #464646; // Set the background color for the buttons
+  border: 1px solid #777777;
+  border-radius: 5px; // Add rounded corners to the buttons
+  cursor: pointer;
+}
+
+.tool:hover {
+  background-color: #999999; // Change the background color on hover
+}
